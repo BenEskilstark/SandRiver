@@ -15,12 +15,20 @@ body {
 }
 
 #container {
-  color: #36454F;
+  /*color: #36454F;*/
+  color: white;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#dandelion {
+  position: absolute;
+  width: 100%;
+  z-index: -2;
 }
 
 h1 {
