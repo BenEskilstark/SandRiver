@@ -4,7 +4,7 @@ body {
   background-color: #faf8ef;
   width: 100%;
   height: 100%;
-  font-family: "Garamond";
+  font-family: Open sans-serif;
   overflow: hidden;
   overflow-y: auto;
 }
@@ -63,7 +63,8 @@ body {
   display: flex;
   justify-content: space-evenly;
   max-width: 40%;
-  min-width: 400px;
+  min-width: 520px;
+  font-size: 20px;
 }
 
 .navigation p {
@@ -72,15 +73,22 @@ body {
   color: #1f1f21;
 }
 
+.navigation p:hover, .navigation a:hover {
+  font-weight: bold;
+  transition: font-weight .15s;
+}
+
 /*Set minimum font size for smaller screens */
 @media screen and (max-width: 500px) {
-   .navigation {
-     top: auto;
-     right: auto;
-     margin-right: auto;
-     margin-left: auto;
-     bottom: 0px;
-   }
+  .navigation {
+    top: auto;
+    right: auto;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 0px;
+    min-width: 400px;
+    font-size: 16px;
+  }
 }
 
 h1 {
@@ -103,7 +111,7 @@ h3 {
 
 .content {
   color: #1f1f21;
-  font-size: 18px;
+  font-size: 20px;
   padding: 0px 30px;
   max-width: 1000px;
   margin-left: auto;
